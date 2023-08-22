@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  background-color: rgb(29, 31, 75);
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* backdrop-filter: blur(150px); */
+}
+.title{
+ position: relative;
+ margin-top: 6%;
+ color: rgb(250, 250, 250,.566);
+}
+.user_input{
+  position: relative;
+  display: flex;
+  height: 30px;
+  width: 300px;
+  margin-top: 2%;
+  box-shadow: 0 2px 4px rgb(0,0,0,2.5);
+  border-radius: 3px;
+}
+.user_input input {
+  position: relative;
+  outline: none;
+  border: none;
+  width: 100%;
+  height:100%;
+  border-radius: 3px;
+  padding: 0 5px;
+  background-color: rgb(255,255,255,.89);
+}
+.user_input input[type='text']{
+  position: relative;
+  left: 0;
+}
+.user_input::placeholder{
+  font-size: 15px;
+  color: rgb(0,0,0,2.5);;
+}
+.btn{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.btn button {
+  border: none;
+  background: none;
+  text-align: center;
+}
+.btn button .icon{
+  font-size: 15px;
+}
+.btn button .icon:hover{
+  color: rgb(14, 208, 79);
+}
+.myList{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgb(0,0,0,2.5);
+  border-radius: 3px;
+  background-color: rgb(255,255,255,.89);
+}
+.new_data{
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.remove_all{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: rgb(255,255,255,.89);
+}
+.remove_all button {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.remove_all button:hover{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color:rgb(15, 137, 186) ;
 }
